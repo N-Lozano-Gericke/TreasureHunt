@@ -11,6 +11,7 @@ namespace Vigenere.Library
         public VigenereCode(string codeWord, int salt)
         {
             this.codeWord = codeWord;
+            this.salt = salt;
         }
         public string Encrypt(string encryptedPrhase)
         {
@@ -79,14 +80,17 @@ namespace Vigenere.Library
         /// <returns></returns>
         private int GetLetterNumber(string letter)
         {
+            int i = 0;
             int result = 0;
             foreach (char c in fullAlphabet)
             {
+                i = c;
                 if (c.ToString() == letter)
-                {
+                {  
                     break;
                 }
             }
+            result = i;
             return result;
         }
     }

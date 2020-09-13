@@ -7,7 +7,7 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            VigenereCode v = new VigenereCode("ucu", 8);
+            VigenereCode v = new VigenereCode("UCU", 8);
             Console.WriteLine(v.Decrypt("ISVJED"));
             Console.WriteLine(v.Decrypt("WMWFKN"));
             Console.WriteLine(v.Decrypt("TORQ"));

@@ -13,8 +13,8 @@ namespace Test.Library
         [SetUp]
         public void Setup()
         {
-            vLowerCase = new VigenereCode("ucu", 0);
-            vLowerCaseSalt = new VigenereCode("ucu", 5);
+            vLowerCase = new VigenereCode("UCU", 1);
+            vLowerCaseSalt = new VigenereCode("UCU", 5);
         }
 
         [Test]
